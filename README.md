@@ -1,9 +1,9 @@
 # nocap
-* use format <type-to-convert-to> <text-to-convert>
+* use format `nocap <type-to-convert-to> <text-to-convert>`
 * following types are available
-      * capital,
-      * lower,
-      * title,
-      * snake,
-      * random
+  * capital,
+  * lower,
+  * title,
+  * snake,
+  * random
 * for text spanning multiple lines please use quotes
