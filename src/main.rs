@@ -12,7 +12,7 @@ fn main() {
     for text spanning multiple words please use quotes
     ";
 
-    if args.len() < 2 {
+    if args.len() <= 2 {
         println!("not enough arguments supplied");
         println!("{}", help);
         std::process::exit(2);
