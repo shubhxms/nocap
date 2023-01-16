@@ -6,4 +6,4 @@
   * title,
   * snake,
   * random
-* for text spanning multiple lines please use quotes
+* for text spanning multiple words please use quotes
