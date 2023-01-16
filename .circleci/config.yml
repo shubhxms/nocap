@@ -5,7 +5,7 @@ version: 2.1
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#
 orbs:
-  rust: circleci/rust@1.6.0
+  rust: circleci/rust@1.63.0
 
 jobs:
   build:
