@@ -6,6 +6,7 @@ version: 2.1
 # See: https://circleci.com/docs/2.0/configuration-reference/#
 orbs:
   rust: circleci/rust@1.6.0
+  swissknife: roopakv/swissknife@0.69.0
 
 jobs:
   build:
@@ -14,7 +15,16 @@ jobs:
       - checkout
       - run: cargo build --verbose
       - run: cargo test --verbose
+  gh-pub:
+    docker:
+      # replace with your preferred image
+      - image: cimg/base:stable
+    steps:
+      - swissknife/publish_github_release:
+          tag: release 
+
 workflows:
   build_and_test:
     jobs:
       - build
+      - gh-pub
