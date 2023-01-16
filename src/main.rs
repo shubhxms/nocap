@@ -9,7 +9,7 @@ fn main() {
     use format <type-to-convert-to> <text-to-convert>\n
     following types are available
     \n\tcapital,\n\tlower,\n\ttitle,\n\tsnake,\n\trandom\n
-    for text spanning multiple lines please use quotes
+    for text spanning multiple words please use quotes
     ";
 
     if args.len() < 2 {
